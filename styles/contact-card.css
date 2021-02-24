@@ -1,6 +1,7 @@
 html, body {
-    background-image: url('/Images/Dark_texture_background.jpg');
+    background-image: url('../Images/Dark_texture_background.jpg');
     background-size: cover;
+    height: 100vh;
     /* background-color:black; */
 }
 
@@ -9,9 +10,14 @@ html, body {
 }
 
 .card {
-    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.795);
+    border-radius: 20px;
 }
 
-.icon:hover {
-    fill: brown;
+.icon:hover path  {
+    fill: rgb(28, 95, 39);
+}
+
+.icon:hover polygon  {
+    fill: rgb(28, 95, 39);
 }
