@@ -1,3 +1,17 @@
 html, body {
-    height: 100vh;
+    background-image: url('/Images/Dark_texture_background.jpg');
+    background-size: cover;
+    /* background-color:black; */
+}
+
+.email {
+    padding-top: 15px;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.icon:hover {
+    fill: brown;
 }
