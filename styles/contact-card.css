@@ -2,6 +2,9 @@ html, body {
     background-image: url('../Images/Dark_texture_background.jpg');
     background-size: cover;
     height: 100vh;
+    max-width: 756px;
+    margin: 0 auto;
+    
     /* background-color:black; */
 }
 
@@ -9,15 +12,28 @@ html, body {
     padding-top: 15px;
 }
 
-.card {
+.profileCard {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.linkCard {
     background-color: rgba(255, 255, 255, 0.795);
     border-radius: 20px;
 }
 
 .icon:hover path  {
-    fill: rgb(28, 95, 39);
+    fill: rgb(173, 112, 19);
 }
 
 .icon:hover polygon  {
-    fill: rgb(28, 95, 39);
+    fill: rgb(173, 112, 19);
+}
+
+.contactImage:hover {
+    background-color: rgb(173, 112, 19);
+    opacity: 0;
+}
+
+.contactImageBackground {
+    background-color: rgb(173, 112, 19);
 }

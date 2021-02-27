@@ -1,30 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Card</title>
-    <script src="js/date.js" async></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link href="styles/contact-card.css" rel="stylesheet">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="./styles/contact-card.css" rel="stylesheet">
+  <title>Bob Ross</title>
 </head>
 
 <body>
     <!-- follow bootstrap layout classes for creating a grid: https://getbootstrap.com/docs/5.0/layout/grid/#example -->
-    <div class="container mx-auto">
+    <div class="container mx-auto mw-75">
         <!-- Stretch Goal: create the top notification bar (time already created, just uncomment next line) -->
         <!-- <div><div><span id='time'></span></div></div> -->
-        <div class="row text-center">
-            <div class="col">
-                <!-- hint: see https://getbootstrap.com/docs/5.0/utilities/borders/#border-radius -->
-                <img src="Images/BobRoss-Square.jpeg" class="rounded-circle border border-white border-2 img-fluid w-75 mt-5 me-3 mb-5 ms-3" alt="profile">
+        <div class="row d-flex justify-content-center">
+            <div class="col d-flex justify-content-center">
+                <img src="./Images/BobRoss-Square.jpeg" class="rounded-circle border border-white border-2 img-fluid w-75 mt-5 me-3 mb-5 ms-3" alt="" onmouseover="hover(this);" onmouseout="unhover(this)">
                 <!-- Add your photo here -->
             </div>
         </div>
         <div>
-            <div class="card">
+            <div class="card linkCard">
                 <div class="card-body">
                     <div class="container">
                         <!-- hint: see https://getbootstrap.com/docs/5.0/components/card -->
@@ -60,5 +59,6 @@
         </div>
         <!-- <div> Stretch goal: Create bottom button bar</div> -->
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
